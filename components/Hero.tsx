@@ -1,13 +1,12 @@
 'use client';
 import Image from 'next/image';
 import CustomButton from './CustomButton';
-import heroImage from '../public/hero.png';
 
 const Hero = () => {
   const handleScroll = () => {};
   return (
     <div className="hero">
-      <div className="flew-1 pt-36 padding-x">
+      <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title">
           Find,Book or Rent a Car Easily and Quickly!
         </h1>
@@ -24,10 +23,10 @@ const Hero = () => {
       </div>
       <div className="hero__image-container">
         <div className="hero__image">
-          <Image src={heroImage} alt="hero" fill className="object-contain" />
-
-          <div className="hero__image-overlay" />
+          <Image src="/hero.png" alt="hero" fill className="object-contain" />
         </div>
+
+        <div className="hero__image-overlay" />
       </div>
     </div>
   );
